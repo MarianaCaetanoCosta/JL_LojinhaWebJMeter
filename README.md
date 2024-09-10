@@ -77,9 +77,9 @@ Este tutorial detalha o processo para criar e executar scripts de teste de autom
 ### Passo 4 : Configurar Proxy no Navegador:
 
    -   Abra o Google Chrome e vá para: **Configurações > Pesquisar: proxy > "Abrir as configurações de proxy do navegador"**.
+
    
-   
-   
+
    -   Ative a opção **Usar servidor proxy** e defina:
        - **Endereço**: `localhost`
        
@@ -114,9 +114,9 @@ Este tutorial detalha o processo para criar e executar scripts de teste de autom
 
    3. **Adicionar um Produto:**
       	-   **Nome**: Fone de ouvido
-      	-   **Valor**: 120,00
-      	-   **Cor**: Preto, Dourado
-      	-   Clique em **Salvar Produto**.
+            	-   **Valor**: 120,00
+            	-   **Cor**: Preto, Dourado
+            	-   Clique em **Salvar Produto**.
 
       ![image-20240909195058102](C:\Users\maria\AppData\Roaming\Typora\typora-user-images\image-20240909195058102.png)
 
@@ -126,8 +126,8 @@ Este tutorial detalha o processo para criar e executar scripts de teste de autom
 
    4. **Adicionar um Componente ao Produto:** 
       	  -   **Nome**: Carregador USB
-      	  -   **Quantidade**: 1
-      	  -   Clique em **Salvar Componente**.
+            	  -   **Quantidade**: 1
+            	  -   Clique em **Salvar Componente**.
 
       ![image-20240909195142541](C:\Users\maria\AppData\Roaming\Typora\typora-user-images\image-20240909195142541.png)
 
@@ -245,3 +245,72 @@ Este tutorial detalha o processo para criar e executar scripts de teste de autom
      
 
 ![image-20240909194914678](C:\Users\maria\AppData\Roaming\Typora\typora-user-images\image-20240909194914678.png)
+
+
+
+# Refatorar
+
+
+
+1. Login com Cadastro de Produto
+
+Cadastrar a partir de 5 usuários virtuais
+
+![image-20240910004920491](C:\Users\maria\AppData\Roaming\Typora\typora-user-images\image-20240910004920491.png)
+
+
+
+Cabeçalho dos dados
+
+1. Abra um bloco de notas e cadastro conforme informações abaixo:
+
+* login;senha;nomeProduto;valorProduto;coreProduto;componenteNome;componenteQuantidade
+* admin;admin;iPhone;200,00;Azul;Carregador;1
+* admin;admin;Macbook Pro;6999,99;Cinza;Bateria;1
+* admin;admin;Apple Watch;3599,99;Vermelho;Pelicula;1
+* admin;admin;iPad 10a Geracao;2020,00;Branco;Capa De Proteção;1
+* admin;admin;Relogio;455,80;Dourado;Pulseira;1
+
+salvar o arquivo como dados-teste.api.csv
+
+![image-20240910010501611](C:\Users\maria\AppData\Roaming\Typora\typora-user-images\image-20240910010501611.png)
+
+
+
+1. Clique com o botão direito em **Login com** **Cadastro de Produto** > Adicionar > Elemento de Configuração > CSV Data Set Config
+
+   ![image-20240910005213503](C:\Users\maria\AppData\Roaming\Typora\typora-user-images\image-20240910005213503.png)
+
+2. Clique com o botão direito em **Variáveis do ambiente** > desabilitar
+
+   ![image-20240910005246701](C:\Users\maria\AppData\Roaming\Typora\typora-user-images\image-20240910005246701.png)
+
+3. Fazer Login
+
+   1. Na aba: **Parameters** alteram as variáveis
+
+   ![image-20240910005648811](C:\Users\maria\AppData\Roaming\Typora\typora-user-images\image-20240910005648811.png)
+
+4. Salvar Produto
+
+   ![image-20240910010740053](C:\Users\maria\AppData\Roaming\Typora\typora-user-images\image-20240910010740053.png)
+
+   
+
+5. Adicionar componente
+
+   ![image-20240910010806983](C:\Users\maria\AppData\Roaming\Typora\typora-user-images\image-20240910010806983.png)
+
+   
+
+6. Adicionar temporizador
+
+   Clique com o botão direito em **Login com Cadastro de usuário** > Adicionar > Temporizador > Temporizador Aleatório Gaussiano
+
+   ![image-20240910010948599](C:\Users\maria\AppData\Roaming\Typora\typora-user-images\image-20240910010948599.png)
+
+7. Executar Testes
+
+   
+
+![image-20240910011319523](C:\Users\maria\AppData\Roaming\Typora\typora-user-images\image-20240910011319523.png)
