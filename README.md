@@ -24,11 +24,11 @@ Avaliar o comportamento da aplicação Lojinha Web sob diferentes condições de
 
 O plano de testes contempla as principais operações da aplicação:
 
-🔐 Login
-📦 Cadastro de produto
-🔧 Cadastro de componente
-📋 Listagem de produtos
-🚪 Logoff
+1. 🔐 Login
+2. 📦 Cadastro de produto
+3. 🔧 Cadastro de componente
+4. 📋 Listagem de produtos
+5. 🚪 Logoff
 
 ---
 
