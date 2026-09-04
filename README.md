@@ -63,7 +63,7 @@ no Apache JMeter.
 Verifique se o caminho configurado no **CSV Data Set Config** corresponde ao arquivo:
 
 ```text
-dados-teste.api.csv
+dados-teste.web.csv
 ```
 
 ### 6. Executar
