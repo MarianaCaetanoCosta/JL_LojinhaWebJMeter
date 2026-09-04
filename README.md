@@ -24,11 +24,11 @@ Avaliar o comportamento da aplicação Lojinha Web sob diferentes condições de
 
 O plano de testes contempla as principais operações da aplicação:
 
-1. Login;
-2. Cadastro de produto;
-3. Cadastro de componente;
-4. Listagem de produtos;
-5. Logoff.
+🔐 Login
+📦 Cadastro de produto
+🔧 Cadastro de componente
+📋 Listagem de produtos
+🚪 Logoff
 
 ---
 
@@ -36,7 +36,7 @@ O plano de testes contempla as principais operações da aplicação:
 
 ### 1. Instalar o Apache JMeter
 
-Instale o Apache JMeter na versão utilizada no projeto.
+Instale o [Apache JMeter](https://jmeter.apache.org/download_jmeter.cgi) na versão utilizada no projeto.
 
 ### 2. Instalar o JMeter Plugins Manager
 
